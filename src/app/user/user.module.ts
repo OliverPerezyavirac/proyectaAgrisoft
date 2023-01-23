@@ -10,6 +10,11 @@ import { CommonModule } from '@angular/common';
     LoginComponent,
     RegisterComponent
   ],
+  exports:[
+    LoginComponent,
+    RegisterComponent
+  ],
+
   imports: [
     CommonModule
   ]

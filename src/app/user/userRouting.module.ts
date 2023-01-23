@@ -6,9 +6,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 const routes:Routes = [
-    {path:'login', component:LoginComponent},
+    {path:'Login', component:LoginComponent},
     {path: 'Register', component: RegisterComponent}
-]
+];
 
 @NgModule({
   declarations: [],

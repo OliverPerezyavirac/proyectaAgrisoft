@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
+
 import { ReportComponent } from './report/report.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { PestReportComponent } from './pest-report/pest-report.component';
+import { StaticModule } from '../static/static.module';
 
 const routes: Routes = [
 
@@ -14,8 +17,8 @@ const routes: Routes = [
 ]
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    imports: [CommonModule,StaticModule ,RouterModule.forChild(routes)],
+   
 })
 
 export class PagesRoutingModule {};
