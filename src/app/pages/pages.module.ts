@@ -1,3 +1,4 @@
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { StaticModule } from './../static/static.module';
 import { RouterModule } from '@angular/router';
 import { ReportComponent } from './report/report.component';
@@ -13,11 +14,13 @@ import { PestReportComponent } from './pest-report/pest-report.component';
         HomeComponent,
         PestReportComponent,
         ReportComponent,
+        DashboardComponent
     ],
     exports: [
         HomeComponent,
         PestReportComponent,
-        ReportComponent
+        ReportComponent,
+        DashboardComponent
     ],
     imports: [
         CommonModule,
